@@ -1,0 +1,27 @@
+
+
+#testID     {
+    color: #ffffff;
+    background-color: black;
+}
+
+#testID2     {
+    color: #ffffff;
+    background-color: lawngreen;
+}
+
+p   {
+    color: black;
+    font-style: italic;
+    background-color: yellow;
+
+}
+
+table {
+    background-color: cadetblue;
+    width: 50%;
+    height: 50%;
+    border: 5px solid;
+    padding: 10px;
+
+}

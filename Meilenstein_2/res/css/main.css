@@ -28,6 +28,10 @@ table {
     font-size: 14px;
 }
 
+td {
+    padding-left: 60px;
+}
+
 button.buttonsize {
     width: 100%;
 
@@ -37,6 +41,13 @@ button.buttonsize {
     margin-left: 10px;
 }
 
-input {
-    width: 132pt;
+a:link, a:visited, a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+
 }

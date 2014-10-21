@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/../WAW/Meilenstein_2/res/css/main.css">
+    <title></title>
+</head>
+<body>
+<div class="logo">
+    <img src="/../WAW/Meilenstein_2/res/img/Gruppenlogo.PNG" alt="Gruppenlogo">
+</div>
+<div style="width: 50%; margin: 0px auto;">
+    <h1 class="ueberschrift">Music</h1>
+    <a href="home.html">(zur&uuml;ck)</a>
+</div>
+
+<form action="http://martinakraus.net/immdb.php" method="get">
+    <table>
+        <thead>
+        <!--nothing to do-->
+        </thead>
+        <tbody>
+        <tr>
+            <td>Interpreter</td>
+            <td><input type="text" name="interpreter"></td>
+        </tr>
+
+        <tr>
+            <td>Albumtitel</td>
+            <td><input type="text" name="albumtitel"></td>
+        </tr>
+        <tr>
+            <td>Erscheinungsjahr</td>
+            <td><input type="text" name="musicerscheinungsjahr"></td>
+        </tr>
+        <tr>
+            <td>Songs</td>
+            <td><textarea rows="5" name="songs"></textarea></td>
+        </tr>
+        <tr>
+            <td>Genre</td>
+            <td><select name="musicgenre">
+                <option value="punk" selected="selected">Punk</option>
+                <option value="metal">Metal</option>
+                <option value="pop">Pop</option>
+                <option value="soul">Soul</option>
+                <option value="hiphop">HipHop</option>
+                <option value="techno">Techno</option>
+
+            </select></td>
+        </tr>
+        <tr>
+            <td>als Favorit markieren</td>
+            <td><input type="checkbox" name="musicfavorit"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="buttonsize" type="submit">Album eintragen</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+</body>
+</html>

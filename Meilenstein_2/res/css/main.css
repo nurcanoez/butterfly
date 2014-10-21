@@ -1,0 +1,42 @@
+html{
+    background-color: darkblue;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+
+div.logo {
+    float: right;
+    width: 115px;
+    height: 130px;
+    border: 3px solid black;
+
+
+}
+
+h1.ueberschrift {
+    text-align: center;
+    font-size: 40pt;
+    width: 20%;
+    display: inline;
+}
+
+table {
+    line-height: 40px;
+    margin-left: 10%;
+    font-size: 14px;
+}
+
+button.buttonsize {
+    width: 100%;
+
+}
+
+.back {
+    margin-left: 10px;
+}
+
+input {
+    width: 132pt;
+}

@@ -1,3 +1,4 @@
+
 span {
     color: RGB(136,0,22);
 }
@@ -10,3 +11,13 @@ div.logo {
 
 
 }
+
+html{
+    background-color: darkblue;
+}
+
+div.logo{
+    float: right;
+    border-bottom: ridge;
+}
+

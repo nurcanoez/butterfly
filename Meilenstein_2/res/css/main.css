@@ -23,10 +23,11 @@ h1.ueberschrift {
 }
 
 table {
-    line-height: 40px;
+    line-height: 50px;
     margin-left: 10%;
     font-size: 14px;
 }
+
 
 td {
     padding-left: 60px;
@@ -40,6 +41,10 @@ button.buttonsize {
 .back {
     margin-left: 10px;
 }
+a:link{
+    color:white;
+    text-decoration: none;
+}
 
 
 a:link, a:visited, a:active {
@@ -48,14 +53,12 @@ a:link, a:visited, a:active {
 }
 
 
-a:hover {
-    text-decoration: underline;
-
-}
-
-
 
  td{
     padding-left: 50px;
  }
 
+a:hover{
+    color:darkblue;
+    background-color: white;
+}

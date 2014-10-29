@@ -25,6 +25,14 @@ table {
 
 }
 
+.buttonleft {
+    border-right: hidden;
+}
+.buttonright {
+    border-left: hidden;
+}
+
+
 .buttons:hover {
     background: RGB(165, 169, 230);
 
@@ -49,12 +57,7 @@ a:active {
     text-decoration: none;
 }
 
-td:first-child {
-    border-right: 3px solid #ffffff;
-    padding: 4px;
-    border-spacing: 0;
 
-}
 td#left {
     text-align: left;
     vertical-align: top;
@@ -66,4 +69,14 @@ td#right {
 .right{
     vertical-align: top;
     text-align: right;
+}
+
+#position{
+    background-color: #ffffff;
+    width: 4px;
+    height: 110%;
+    position: fixed;
+    margin-top: -20px;
+    left: 48%;
+    right: 50%;
 }

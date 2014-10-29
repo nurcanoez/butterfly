@@ -29,11 +29,15 @@ table {
     background: RGB(165, 169, 230);
 
 }
-
+.buttons a:hover {
+    color: black;
+}
 a:link {
     color: white;
     text-decoration: none;
 }
+
+
 
 a:visited {
     color: #ffffff;
@@ -49,6 +53,7 @@ td:first-child {
     border-right: 3px solid #ffffff;
     padding: 4px;
     border-spacing: 0;
+
 }
 td#left {
     text-align: left;

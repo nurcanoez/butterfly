@@ -66,16 +66,6 @@ td.alignRight {
     margin: 0px auto;
 }
 
-td#left {
-    text-align: left;
-    vertical-align: top;
-}
-
-td#right {
-    vertical-align: top;
-    text-align: right;
-}
-
 table.musicFilm {
     line-height: 40px;
     margin-left: 15%;

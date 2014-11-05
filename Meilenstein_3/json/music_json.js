@@ -1,55 +1,65 @@
-/**
- * Created by Nurcan on 29.10.2014.
- */
+var musicData = '{ "music" : [' +
+    '{' +
+    '"interpreter":"Farin Urlaub",' +
+    '"albumtitel":"Faszination Weltraum",' +
+    '"erscheinungsjahr": 2014,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Die Ärzte",' +
+    '"albumtitel":"Planet Punk",' +
+    '"erscheinungsjahr": 1995,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"The Offspring",' +
+    '"albumtitel":"Smash",' +
+    '"erscheinungsjahr": 1994,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Blink 182",' +
+    '"albumtitel":"Enema of the State",' +
+    '"erscheinungsjahr": 1999,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Rise Against",' +
+    '"albumtitel":"Siren Song of the Counter Culture",' +
+    '"erscheinungsjahr": 2004,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Vampire Weekend",' +
+    '"albumtitel":"Vampire Weekend",' +
+    '"erscheinungsjahr": 2007,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Bouncing Souls",' +
+    '"albumtitel":"How I spent my summer vacation",' +
+    '"erscheinungsjahr": 2001,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Beatsteaks",' +
+    '"albumtitel":"Living Targets",' +
+    '"erscheinungsjahr": 2002,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"Bloc Party",' +
+    '"albumtitel":"Silent Alarm",' +
+    '"erscheinungsjahr": 2005,' +
+    '"genre": "Punk" ' +
+    '},' +
+    '{' +
+    '"interpreter":"WIZO",' +
+    '"albumtitel":"Anderster",' +
+    '"erscheinungsjahr": 2004,' +
+    '"genre": "Punk" ' +
+    '}' +
+    ']}';
 
-var music = {"Musikfavoritenliste":[
-    {"Interpreter": "Farin Urlaub",
-        "Albumtitel": "Faszination Weltraum",
-        "Erscheinungsjahr": 2014,
-        "Genre": "Punk"},
 
-    {"Interpreter": "Die Ärzte",
-        "Albumtitel": "Planet Punk",
-        "Erscheinungsjahr": 1995,
-        "Genre": "Punk"},
-
-    {"Interpreter": "The Offspring",
-        "Albumtitel": "Smash",
-        "Erscheinungsjahr": 1994,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Blink 182",
-        "Albumtitel": "Enema of the State",
-        "Erscheinungsjahr": 1999,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Rise Against",
-        "Albumtitel": "Siren Song of the Counter Culture",
-        "Erscheinungsjahr": 2004,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Vampire Weekend",
-        "Albumtitel": "Vampire Weekend",
-        "Erscheinungsjahr": 2007,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Bouncing Souls",
-        "Albumtitel": "How I spent my summer vacation",
-        "Erscheinungsjahr": 2001,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Beatsteaks",
-        "Albumtitel": "Living Targets",
-        "Erscheinungsjahr": 2002,
-        "Genre": "Punk"},
-
-    {"Interpreter": "Bloc Party",
-        "Albumtitel": "Silent Alarm",
-        "Erscheinungsjahr": 2005,
-        "Genre": "Punk"},
-
-    {"Interpreter": "WIZO",
-        "Albumtitel": "Anderster",
-        "Erscheinungsjahr": 2004,
-        "Genre": "Punk"}
-]};
+    var musicObject = JSON.parse(musicData);

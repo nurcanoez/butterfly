@@ -5,8 +5,12 @@
     <link rel="stylesheet" type="text/css" href="../../Meilenstein_2/res/css/main.css">
     <link rel="stylesheet" type="text/css" href="../../Meilenstein_2/res/css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/favoriten.css" />
+ <script type="text/javascript" src="../json/music_json.js"></script>
+    <script type="text/javascript" src="../json/film_json.js"></script>
 
-</head>
+
+</head >
+
 <body id="favoriten">
 <div id="head">
     <span>M</span>eine<span> F</span>avoriten
@@ -17,5 +21,13 @@
     <div class="kasten right">
         <span class="boxschrift">Meine Filmfavoriten</span>
     </div>
+
+<p id="demo"></p>
+
+<script>
+
+    document.getElementById("demo").innerHTML =
+            musicObject.music[2].interpreter + " " + musicObject.music[2].albumtitel;
+</script>
 </body>
 </html>

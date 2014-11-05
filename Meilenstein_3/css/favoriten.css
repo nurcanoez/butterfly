@@ -1,0 +1,39 @@
+#head{
+
+    text-align: center;
+    font-size: 36px;
+}
+.kasten{
+  width: 300px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    border: solid 8px #ffffff;
+    line-height: 80px ;
+}
+
+.kasten:hover {
+background-color: RGB(165, 169, 230);
+}
+
+.kasten:active {
+background-color: RGB(0,162, 232);
+}
+
+.left{
+    border-right: 2px solid #ffffff;
+     right: 50%;
+
+}
+
+.right{
+    border-left: 2px solid #ffffff;
+
+    left: 50%;
+}
+
+.boxschrift {
+    font-size: 16px;
+    color: #ffffff;
+}
+

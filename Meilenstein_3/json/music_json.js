@@ -6,7 +6,7 @@ var musicData = '{ "music" : [' +
     '"genre": "Punk" ' +
     '},' +
     '{' +
-    '"interpreter":"Die Ärzte",' +
+    '"interpreter":"Die &auml;rzte",' +
     '"albumtitel":"Planet Punk",' +
     '"erscheinungsjahr": 1995,' +
     '"genre": "Punk" ' +
@@ -62,4 +62,4 @@ var musicData = '{ "music" : [' +
     ']}';
 
 
-    var musicObject = JSON.parse(musicData);
+var musicObject = JSON.parse(musicData);

@@ -4,7 +4,7 @@ var filmData = '{ "filme" : [' +
     '"regie":"Stanley Kubrick",' +
     '"drehbuch": "Stanley Kubrick",' +
     '"erscheinungsjahr": 1971,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"Love Exposure",' +
@@ -18,14 +18,14 @@ var filmData = '{ "filme" : [' +
     '"regie":"Michael Laux",' +
     '"drehbuch": "Michael Laux",' +
     '"erscheinungsjahr": 1985,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"Inglourious Basterds",' +
     '"regie":"Quentin Tarantino",' +
     '"drehbuch": "Quentin Tarantino",' +
     '"erscheinungsjahr": 2009,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"Pulp Fiction",' +
@@ -42,14 +42,14 @@ var filmData = '{ "filme" : [' +
     '"genre": "Romanze" ' +
     '},' +
     '{' +
-    '"filmtitel":"Das Schicksal ist ein mieser Verräter",' +
+    '"filmtitel":"Das Schicksal ist ein mieser Verr&auml;ter",' +
     '"regie":"Josh Boone",' +
-    '"drehbuch": "Scott Neustädter",' +
+    '"drehbuch": "Scott Neust&auml;dter",' +
     '"erscheinungsjahr": 2014,' +
     '"genre": "Romanze" ' +
     '},' +
     '{' +
-    '"filmtitel":"Tatsächlich ...Liebe",' +
+    '"filmtitel":"Tats&auml;chlich ...Liebe",' +
     '"regie":"Richard Curtis",' +
     '"drehbuch": "Richard Curtis",' +
     '"erscheinungsjahr": 2003,' +
@@ -60,21 +60,21 @@ var filmData = '{ "filme" : [' +
     '"regie":"Mark Neveldine",' +
     '"drehbuch": "Mark Neveldine",' +
     '"erscheinungsjahr": 2006,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"Snatch",' +
     '"regie":"Guy Ritchie",' +
     '"drehbuch": "Guy Rithchie",' +
     '"erscheinungsjahr": 2000,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"Trainspotting",' +
     '"regie":"Danny Boyle",' +
     '"drehbuch": "John Hodge",' +
     '"erscheinungsjahr": 1996,' +
-    '"genre": "Komödie" ' +
+    '"genre": "Kom&ouml;die" ' +
     '},' +
     '{' +
     '"filmtitel":"The Transporter",' +

@@ -1,32 +1,33 @@
-#head{
+#head {
 
     text-align: center;
     font-size: 36px;
 }
-.kasten{
-  width: 300px;
+
+.kasten {
+    width: 300px;
     height: 80px;
     position: absolute;
     text-align: center;
     border: solid 8px #ffffff;
-    line-height: 80px ;
+    line-height: 80px;
 }
 
 .kasten:hover {
-background-color: RGB(165, 169, 230);
+    background-color: RGB(165, 169, 230);
 }
 
 .kasten:active {
-background-color: RGB(0,162, 232);
+    background-color: RGB(0, 162, 232);
 }
 
-.left{
+.left {
     border-right: 2px solid #ffffff;
-     right: 50%;
+    right: 50%;
 
 }
 
-.right{
+.right {
     border-left: 2px solid #ffffff;
 
     left: 50%;
@@ -35,5 +36,19 @@ background-color: RGB(0,162, 232);
 .boxschrift {
     font-size: 16px;
     color: #ffffff;
+}
+
+table.musicTable, table.filmTable {
+    vertical-align: middle;
+    font-size: 16px;
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 12%;
+    color: white;
+    text-align: center;
+}
+
+thead.ueberschrift {
+    color:red;
 }
 

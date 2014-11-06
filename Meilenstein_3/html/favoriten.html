@@ -4,24 +4,195 @@
 
     <link rel="stylesheet" type="text/css" href="../../Meilenstein_2/res/css/main.css">
     <link rel="stylesheet" type="text/css" href="../../Meilenstein_2/res/css/home.css">
-    <link rel="stylesheet" type="text/css" href="../css/favoriten.css" />
- <script type="text/javascript" src="../json/music_json.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/favoriten.css"/>
+    <script type="application/javascript" src="../../Meilenstein_3/js/detail.js"></script>
+    <script type="text/javascript" src="../json/music_json.js"></script>
     <script type="text/javascript" src="../json/film_json.js"></script>
 
 
-</head >
+</head>
 
-<body id="favoriten">
+<body onload="fillTables('musicTable');" id="favoriten">
 <div id="head">
     <span>M</span>eine<span> F</span>avoriten
 </div>
-    <div class="kasten left">
-        <span class="boxschrift">Meine Musikfavoriten</span>
-    </div>
-    <div class="kasten right">
-        <span class="boxschrift">Meine Filmfavoriten</span>
-    </div>
+<div class="kasten left" onclick="fillTables('musicTable')">
+    <span class="boxschrift">Meine Musikfavoriten</span>
+</div>
+<div class="kasten right" onclick="fillTables('filmTable')">
+    <span class="boxschrift">Meine Filmfavoriten</span>
+</div>
 
+<table id="musicId" class="musicTable">
+    <thead class="ueberschrift">
+    <th>Interpreter</th>
+    <th>Albumtitel</th>
+    <th>Erscheinungsjahr</th>
+    <th>Genre</th>
+    </thead>
+    <tbody id="datenMusic">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<table id="filmId" class="filmTable">
+    <thead class="ueberschrift">
+    <th>Filmtitel</th>
+    <th>Regie</th>
+    <th>Drehbuch</th>
+    <th>Erscheinungsjahr</th>
+    <th>Genre</th>
+    </thead>
+    <tbody id="datenFilm">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+ <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+<!--
 <p id="demo"></p>
 
 <script>
@@ -29,5 +200,6 @@
     document.getElementById("demo").innerHTML =
             musicObject.music[2].interpreter + " " + musicObject.music[2].albumtitel;
 </script>
+-->
 </body>
 </html>

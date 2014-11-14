@@ -28,4 +28,84 @@ function fillTables(kindOfData) {
             break;
     }
 
+
+}
+
+function checkInputElements() {
+    var check = true;
+    var missing = [];
+
+    var elements = document.getElementsByTagName('input');
+    var textArea = document.getElementsByTagName('textarea');
+    for (var inputElement = 0; inputElement < elements.length; inputElement++) {
+        var currElement = elements[inputElement]
+        alert(currElement.id);
+        alert(currElement.tagName);
+        switch (currElement.id) {
+            case "filmtitel":
+                if (!elements[inputElement].innerHTML.match("([0-9]|\\ |[a-z])*")) {
+                    localcheck = false
+                }
+                break;
+            case "albumtitel":
+                if (!elements[inputElement].innerHTML.match("([0-9]|\\ |[a-z])*")) {
+                    localcheck = false
+                }
+                break;
+            case "interpreter":
+                if (!elements[inputElement].innerHTML.match("([a-zA-Z]*\\ [a-zA-Z]*)")) {
+                    localcheck = false
+                }
+                break;
+            case "regie":
+                if (!elements[inputElement].innerHTML.match("([a-zA-Z]*\ [a-zA-Z]*)")) {
+                    localcheck = false
+                }
+                break;
+            case "drehbuch":
+                if (!elements[inputElement].innerHTML.match("([a-zA-Z]*\ [a-zA-Z]*)")) {
+                    localcheck = false
+                }
+                break;
+            case "erscheinungsjahr":
+                if (!elements[inputElement].innerHTML.match("([a-zA-Z]*\ [a-zA-Z]*)") && currElement.innerHTML > new Date().getYear) {
+                    localcheck = false
+                }
+                break;
+            case "schauspieler":
+                if ((!elements[inputElement].innerHTML.match("([a-zA-Z]+\,[a-zA-Z]+)*)") || !elements[inputElement].innerHTML.match("([a-zA-Z]+)"))) {
+                    localcheck = false
+                }
+                break;
+            case "song":
+                if ((!elements[inputElement].innerHTML.match("([a-zA-Z]+\,[a-zA-Z]+)*)") || !elements[inputElement].innerHTML.match("([a-zA-Z]+)"))) {
+                    localcheck = false
+                }
+                break;
+        }
+
+        if (!localcheck) {
+            currElement.className = "error";
+            missing.push(currElement.name)
+
+            if (check) {
+                currElement.focus();
+                check = localcheck;
+            }
+        }
+        else {
+            currElement.className = "";
+        }
+    }
+    if(textArea.innerHTML.match("([a-zA-Z]+\,[a-zA-Z]+)*)") || !elements[inputElement].innerHTML.match("([a-zA-Z]+)")){
+        textArea.className = "error";
+        missing.push(textArea.name);
+        textArea.focus();
+    }
+
+    if (!check) {
+        alert("Fehler bei der Eingabe der Felder: \n" + missing.join(", "));
+    }
+
+    return check;
 }

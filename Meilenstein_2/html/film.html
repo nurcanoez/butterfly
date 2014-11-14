@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-
+    <script type="application/javascript" src="../../Meilenstein_3/js/detail.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../res/css/main.css">
 
@@ -22,7 +22,7 @@
 
 
 
-<form action="http://martinakraus.net/immdb.php" method="get">
+<form onsubmit="return checkInputElements();" action="http://martinakraus.net/immdb.php" method="get">
     <table class="musicFilm">
         <thead>
         <!--nothing to do here-->
@@ -30,28 +30,28 @@
         <tbody>
         <tr>
             <td>Filmtitel</td>
-            <td><input type="text" name="filmtitel"></td>
+            <td><input type="text" id="filmtitel" name="filmtitel"></td>
         </tr>
 
         <tr>
             <td>Regie</td>
-            <td><input type="text" name="regie"></td>
+            <td><input type="text" id="regie" name="regie"></td>
         </tr>
         <tr>
             <td>Drehbuch</td>
 
-            <td><input  type="text" name="drehbuch"></td>
+            <td><input  type="text" id="drehbuch" name="drehbuch"></td>
         </tr>
 
         <tr>
             <td>Erscheinungsjahr</td>
 
-            <td><input type="text" name="erscheinungsjahr"></td>
+            <td><input type="text" id="erscheinungsjahr" name="erscheinungsjahr"></td>
         </tr>
 
         <tr>
             <td>Schauspieler</td>
-            <td><textarea rows="5" name="schauspieler"></textarea></td>
+            <td><textarea rows="5" id="schauspieler" name="schauspieler"></textarea></td>
         </tr>
         <tr>
             <td>Genre</td>

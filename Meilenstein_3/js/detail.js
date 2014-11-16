@@ -38,7 +38,8 @@ function checkInputElements() {
     var elements = document.getElementsByTagName('input');
     var textArea = document.getElementsByTagName('textarea');
     for (var inputElement = 0; inputElement < elements.length; inputElement++) {
-        var currElement = elements[inputElement]
+        var localcheck = true;
+        var currElement = elements[inputElement];
         alert(currElement.id);
         alert(currElement.tagName);
         switch (currElement.id) {
@@ -68,7 +69,7 @@ function checkInputElements() {
                 }
                 break;
             case "erscheinungsjahr":
-                if (!elements[inputElement].innerHTML.match("([a-zA-Z]*\ [a-zA-Z]*)") && currElement.innerHTML > new Date().getYear) {
+                if (!elements[inputElement].innerHTML.match("[0-9]{4}") && currElement.innerHTML > new Date().getYear) {
                     localcheck = false
                 }
                 break;
@@ -97,7 +98,7 @@ function checkInputElements() {
             currElement.className = "";
         }
     }
-    if(textArea.innerHTML.match("([a-zA-Z]+\,[a-zA-Z]+)*)") || !elements[inputElement].innerHTML.match("([a-zA-Z]+)")){
+    if (textArea.innerHTML.match("([a-zA-Z]+\,[a-zA-Z]+)*)") || !elements[inputElement].innerHTML.match("([a-zA-Z]+)")) {
         textArea.className = "error";
         missing.push(textArea.name);
         textArea.focus();

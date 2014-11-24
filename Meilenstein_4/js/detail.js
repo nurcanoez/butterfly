@@ -108,7 +108,7 @@ function checkInputElements() {
         check = false;
     }
     if (!check) {
-        alert("Fehler bei der Eingabe der Felder: \n" + missing.join(", "));
+        alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben. \n" + missing.join(", "));
     }
 
     return check;

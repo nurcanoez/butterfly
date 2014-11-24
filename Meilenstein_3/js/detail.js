@@ -1,115 +1,71 @@
-function fillTables(kindOfData) {
-    var datenTabelle;
-    switch (kindOfData) {
-        case 'musicTable':
-            document.getElementById("musicId").style.display = 'block';
-            document.getElementById("filmId").style.display = 'none';
-            datenTabelle = document.getElementById("datenMusic");
-            for (var zeile = 0; zeile < datenTabelle.children.length; zeile++) {
-                var trChildren = datenTabelle.children[zeile].children;
-                trChildren[0].innerHTML = musicObject.music[zeile].interpreter;
-                trChildren[1].innerHTML = musicObject.music[zeile].albumtitel;
-                trChildren[2].innerHTML = musicObject.music[zeile].erscheinungsjahr;
-                trChildren[3].innerHTML = musicObject.music[zeile].genre;
-            }
-            break;
-        case 'filmTable':
-            document.getElementById("musicId").style.display = 'none';
-            document.getElementById("filmId").style.display = 'block';
-            datenTabelle = document.getElementById("datenFilm");
-            for (var zeile = 0; zeile < datenTabelle.children.length; zeile++) {
-                var trChildren = datenTabelle.children[zeile].children;
-                trChildren[0].innerHTML = filmObject.filme[zeile].filmtitel;
-                trChildren[1].innerHTML = filmObject.filme[zeile].regie;
-                trChildren[2].innerHTML = filmObject.filme[zeile].drehbuch;
-                trChildren[3].innerHTML = filmObject.filme[zeile].erscheinungsjahr;
-                trChildren[4].innerHTML = filmObject.filme[zeile].genre;
-            }
-            break;
-    }
-
-
+function hauptSicht(){
+LadeTabelle(document.getElementById("filmButton"),filmData.filme);
 }
 
-function checkInputElements() {
-    var check = true;
-    var missing = [];
 
-    var elements = document.getElementsByTagName('input');
-    var textArea = document.getElementsByTagName('textarea');
-    for (var inputElement = 0; inputElement < elements.length; inputElement++) {
-        var localcheck = true;
-        var currElement = elements[inputElement];
-        if (currElement.type != "checkbox") {
-            switch (currElement.id) {
-                case "filmtitel":
-                    if (!currElement.value.match("(([0-9]|[a-z]|ä|ö|ü|Ü|Ä|Ö))+( *(([a-z]|[0-9]|ä|ö|ü|Ü|Ä|Ö))*)+")) {
-                        //alert("Film falsch");
-                        localcheck = false;
-                    }
-                    break;
-                case "albumtitel":
-                    if (!currElement.value.match("(([0-9]|[a-z]|ä|ö|ü|Ü|Ä|Ö))+( *(([a-z]|[0-9]|ä|ö|ü|Ü|Ä|Ö))*)+")) {
-                        //alert("Album falsch");
-                        localcheck = false;
-                    }
-                    break;
-                case "interpreter":
-                    if (!currElement.value.match("([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö)+( ([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö)*)*")) {
-                        //alert("Interpreter falsch");
-                        localcheck = false;
-                    }
-                    break;
-                case "regie":
-                    if (!currElement.value.match("([a-zA-Z]+ [a-zA-Z]*)")) {
-                        //alert("Regie falsch");
-                        localcheck = false;
-                    }
-                    break;
-                case "drehbuch":
-                    if (!currElement.value.match("([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö+ [a-zA-Z]|ä|ö|ü|Ü|Ä|Ö*)")) {
-                        //alert("Drehbuch falsch");
-                        localcheck = false;
-                    }
-                    break;
-                case "erscheinungsjahr":
-                    if (!currElement.value.match("[0-9]{4}")) {
-                        //alert("Ersch falsch");
-                        localcheck = false;
-                    } else {
-                        var temp = new Date(currElement.value + "-01-01");
-                        if (temp > new Date()) {
-                            //alert("Ersch falsch");
-                            localcheck = false;
-                        }
-                    }
-                    break;
-            }
-        }
+function LadeTabelle(that, path){
+    //die farbe der selektierten buttons wird geändert
+    that.setAttribute("class","selected");
 
-        if (!localcheck) {
-            currElement.className = "error";
-            missing.push(currElement.name)
+    //die farbe der nichtselektierten buttons wird auch geändert bzw. bleibt
 
-            if (check) {
-                currElement.focus();
-                check = localcheck;
-            }
-        }
-        else {
-            currElement.className = "";
-        }
-    }
-    var textAreaElement = textArea[0];
-    if (!textAreaElement.value.match("^(([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö)+[,\s]+)*([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö)+$")) {
-        textAreaElement.className = "error";
-        missing.push(textAreaElement.name);
-        textAreaElement.focus();
-        check = false;
-    }
-    if (!check) {
-        alert("Fehler bei der Eingabe der Felder: \n" + missing.join(", "));
+    if(path == musicData.music){
+
+        var elem = document.getElementById("musicButton");
+        elem.setAttribute("class", "buttons");
+    }else{
+        var elem= document.getElementById("filmButton");
+        elem.setAttribute("class","buttons");
     }
 
-    return check;
+    var filmHinzu = document.getElementById("fulleTabelle");
+
+    while(filmHinzu.hasChildNodes()){
+        filmHinzu.removeChild(filmHinzu.lastChild);
+    }
+
+    var tr = document.createElement('tr');
+    for(zulassig in path[0]){
+        var td = tr.appendChild(document.createElement('td'));
+        td.innerHTML = zulassig;
+    }
+    tr.setAttribute("class","tabellenKopf");
+    fulleTabelle.appendChild(tr);
+
+    for(index in path){
+        var tr = document.createElement('tr');
+        for(besitzt in path[index]){
+            var td = tr.appendChild(document.createElement('td'));
+            td.innerHTML = path[index][besitzt];
+            fulleTabelle.appendChild(tr);
+        }
+        tr.setAttribute("class","tabellenBody");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

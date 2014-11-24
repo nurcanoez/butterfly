@@ -1,71 +1,78 @@
-#head {
-
-    text-align: center;
+.uberschrift{
     font-size: 36px;
-}
-
-.kasten {
-    width: 300px;
-    height: 80px;
-    position: absolute;
+    padding: 25px;
+    margin: 25px;
     text-align: center;
-    border: solid 8px #ffffff;
-    line-height: 80px;
 }
-
-.kasten:hover {
-    background-color: RGB(165, 169, 230);
+red{
+    color:RGB(136, 0, 22);
 }
-
-.kasten:active {
-    background-color: RGB(0, 162, 232);
-}
-
-.left {
-    border-right: 2px solid #ffffff;
-    right: 50%;
-
-}
-
-.right {
-    border-left: 2px solid #ffffff;
-
-    left: 50%;
-}
-
-.boxschrift {
-    font-size: 16px;
+span{
     color: #ffffff;
 }
 
-table.musicTable, table.filmTable {
-    border-collapse:collapse;
-    border: solid 4px #ffffff;
-    border-right-style: hidden;
-    vertical-align: middle;
+.favoritenBox{
     font-size: 16px;
-    width: 50%;
-    margin: 0px auto;
-    margin-top: 12%;
-    color: white;
-    text-align: center;
+    margin-top: 50px;
 }
 
-thead th,tbody td{
-    height: 5px;
-    border-style: solid;
-    border-color: white;
-    border-right-width:8px;
-    border-left-width:4px;
+#fulleTabelle{
+    border-collapse: collapse;
+    border: 8px solid #ffffff;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.favoritenBox{
+    font-size: 16px;
+    margin-top: 50px;
+    text-align:  center;
+}
+table td{
+    height: 50px;
+    border: 8px solid #ffffff;
     border-bottom-width: 4px;
-    border-top-width: 2px;
-    padding: 5px 10px;
+    border-top-width: 4px;
+    padding: 2px 5px;
+    font-size: 16px;
+}
+
+body{
+    height: 100%;
+    margin: 0;
 }
 
 
-thead.ueberschrift {
-    color:red;
+.buttons{
+    border: 5px solid white;
+    text-align: center;
+    width: 450px;
+    padding: 1.1em;
 }
 
+.buttons:hover{
+    background: RGB(165,169,230);
+    color: black;
+    cursor: pointer;
+}
 
+.selected{
+    background: RGB(0,162,232);
+    color: black;
+    border: 5px solid white;
+    text-align: center;
+    width: 450px;
+    padding: 1.4em;
+}
 
+.tabellenKopf td{
+    color: RGB(136,0,22);
+    border:8px solid white;
+}
+.tabellenBody td:nth-child(2) {
+    color: RGB(0,162,232);
+}

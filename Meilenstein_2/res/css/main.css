@@ -70,3 +70,7 @@ table.musicFilm {
     line-height: 40px;
     margin-left: 15%;
 }
+
+.center{
+    text-align: center;
+}

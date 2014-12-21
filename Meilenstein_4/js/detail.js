@@ -72,6 +72,14 @@ function checkInputElements() {
                         localcheck = false;
                     }
                     break;
+                case "schauspieler":
+                    if (!currElement.value.match("([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö+,[a-zA-Z]|ä|ö|ü|Ü|Ä|Ö*)")){
+                        localcheck =false;
+                    }
+                case "songs":
+                    if(!currentElement.value.match("([a-zA-Z]|ä|ö|ü|Ü|Ä|Ö+,[a-zA-Z]|ä|ö|ü|Ü|Ä|Ö*)")){
+                        localcheck=false;
+                    }
                 case "erscheinungsjahr":
                     if (!currElement.value.match("[0-9]{4}")) {
                         //alert("Ersch falsch");

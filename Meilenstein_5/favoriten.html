@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link rel="stylesheet" type="text/css" href="../Meilenstein_2/res/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../Meilenstein_2/res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../Meilenstein_3/css/favoriten.css"/>
+    <script type="application/javascript" src="../Meilenstein_4/js/inhaltTabelle.js"></script>
+    <script type="application/javascript" src="../Meilenstein_3/js/detail.js"></script>
+
+    <script type="text/javascript" src="../Meilenstein_3/json/music_json.json"></script>
+    <script type="text/javascript" src="../Meilenstein_3/json/film_json.json"></script>
+
+
+</head>
+
+<body onload="hauptSicht()">
+<div>
+    <div class="uberschrift">
+        <span><red>M</red></span>eine <span><red>F</red></span>avoriten
+    </div>
+    <form action="Server/getFavorite.php" method="get">
+    <div class="favoritenBox">
+
+         <input type="submit" name="button" value="Musik" >
+            <input type="submit" name="button" value="Film" >
+
+
+    </div>
+    </form>
+</div>
+<div class="PlatzfürTabelle">
+    <table id="fulleTabelle">
+
+    </table>
+</div>
+<div class="logo"><img src="../Meilenstein_2/res/img/Gruppenlogo.PNG"></div>
+</body>
+</html>

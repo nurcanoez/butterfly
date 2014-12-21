@@ -1,6 +1,7 @@
 
 span  {
     color: RGB(136, 0, 22);
+
 }
 
 table {
@@ -75,3 +76,8 @@ td#right {
     left: 48%;
     right: 50%;
 }
+.submitbutton{   background: blue;
+    border: 5px solid white;
+    text-align: center;
+    width: 450px;
+    padding: 1.1em;}

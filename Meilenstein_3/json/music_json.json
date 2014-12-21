@@ -3,7 +3,7 @@ var musicData = {"music":[
         "Albumtitel": "Faszination Weltraum",
         "Erscheinungsjahr": 2014,
         "Genre": "Punk"},
-    {"Interpreter": "Die Ärzte",
+    {"Interpreter": "Die &Aumlrzte",
         "Albumtitel": "Planet Punk",
         "Erscheinungsjahr": 1995,
         "Genre": "Punk"},

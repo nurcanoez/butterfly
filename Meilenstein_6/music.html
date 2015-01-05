@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+    <title></title>
+    <script type="application/javascript" src="../Meilenstein_4/js/detail.js"></script>
+    <script type="text/javascript" src="../Meilenstein_4/js/inhaltTabelle.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Meilenstein_2/res/css/main.css">
+</head>
+<body>
+
+<div class="textUeberschrift">
+    <h1 class="ueberschrift">Music</h1>
+    <a href="home.html">(zur&uuml;ck)</a>
+    <div class="logo">
+        <img src="../Meilenstein_2/res/img/Gruppenlogo.PNG" alt="Gruppenlogo">
+    </div>
+    <a href="../Meilenstein_3/html/favoriten.html">Meine Favoriten</a>
+
+</div>
+
+<form onsubmit="return checkInputElements();" action="http://localhost/butterfly/Meilenstein_6/Server/immdb.php" method="get">
+    <table class="musicFilm">
+        <thead>
+        <!--nothing to do-->
+        </thead>
+        <tbody>
+        <tr>
+            <td>Interpreter</td>
+            <td><input type="text" id="interpreter" name="interpreter"></td>
+        </tr>
+
+        <tr>
+            <td>Albumtitel</td>
+            <td><input type="text" id="albumtitel" name="albumtitel"></td>
+        </tr>
+        <tr>
+            <td>Erscheinungsjahr</td>
+            <td><input type="text" id="erscheinungsjahr" name="musicerscheinungsjahr"></td>
+        </tr>
+        <tr>
+            <td>Songs</td>
+            <td><textarea rows="5" id="song" name="songs"></textarea></td>
+        </tr>
+        <tr>
+            <td>Genre</td>
+            <td><select name="musicgenre">
+                <option value="punk" selected="selected">Punk</option>
+                <option value="metal">Metal</option>
+                <option value="pop">Pop</option>
+                <option value="soul">Soul</option>
+                <option value="hiphop">HipHop</option>
+                <option value="techno">Techno</option>
+
+            </select></td>
+        </tr>
+        <tr>
+            <td>als Favorit markieren</td>
+            <td><input type="checkbox" name="musicfavorit"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="buttonsize" type="submit">Album eintragen</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+</body>
+</html>
